@@ -1,8 +1,7 @@
-
 export function getInputNumber(count) {
     return {
         type: 'inputNumber',
-        count
+        count: count
     }
 }
 

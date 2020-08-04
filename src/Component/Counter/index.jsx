@@ -11,14 +11,14 @@ class Counter extends React.Component {
     }
 
     increase = () => {
-        store.dispatch(Action.increase())
+        store.dispatch({type: 'increase'})
         this.setState((prevState) => ({
             number: prevState.number + 1
         }))
     }
 
     decrease = () => {
-        store.dispatch(Action.decrease())
+        store.dispatch({type: 'decrease'})
         this.setState((prevState) => ({
             number: prevState.number - 1
         }))
@@ -35,5 +35,4 @@ class Counter extends React.Component {
     }
 
 }
-
 export default Counter
