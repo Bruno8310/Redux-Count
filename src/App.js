@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CounterGroup from './Components/CounterGroup';
+import CounterGroup from './Component/CounterGroup';
 
 function App() {
   return (

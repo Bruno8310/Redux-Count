@@ -1,28 +1,19 @@
-/**
- * action类型
- */
-const INPUT_NUMBER_AS_COUNTER = 'inputNumber';
-const INCREASE_ONE = 'incerase';
-const DECREASE_ONE = 'decrease';
 
-/**
- * action创建函数
- */
-export function getInputNumber(number) {
+export function getInputNumber(count) {
     return {
-        type: INPUT_NUMBER_AS_COUNTER,
-        value
+        type: 'inputNumber',
+        count
     }
 }
 
 export function increase() {
     return {
-        type: INCREASE_ONE
+        type: 'incerase'
     }
 }
 
 export function decrease() {
     return {
-        type: DECREASE_ONE
+        type: 'decrease'
     }
 }
